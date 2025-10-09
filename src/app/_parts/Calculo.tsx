@@ -184,7 +184,7 @@ export function Calculo(){
 
             <label className="px-5">  </label>
 
-            <button onClick={ClickCalc} className="shadow-md border border-black hover:bg-black transition-colors bg-yellow-600 text-white px-1">Calcular orçamento:</button>
+            <button onClick={(evt) => ClickCalc("1")} className="shadow-md border border-black hover:bg-black transition-colors bg-yellow-600 text-white px-1">Calcular orçamento:</button>
             <div className="shadow-md sm:text-2xl md:text-2xl lg:text-4xl px-2 border border-green-950 bg-green-800 text-white">
                 R$ {Res.toFixed(2)}
             </div>

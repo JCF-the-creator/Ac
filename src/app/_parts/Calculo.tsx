@@ -36,8 +36,8 @@ export function Calculo(){
         const C = parseFloat(Comp)
         const L = parseFloat(Larg)
         const BC = parseFloat(Calc)
-        
-        const resultado = BC*A*C*L*.25*3
+
+        const resultado = A*C*L*.25*3
         setResult(resultado)
     }
 
@@ -184,7 +184,7 @@ export function Calculo(){
 
             <label className="px-5">  </label>
 
-            <button value={Calc} onClick={(evt) => ClickCalc(evt.target.value)} className="shadow-md border border-black hover:bg-black transition-colors bg-yellow-600 text-white px-1">Calcular orçamento:</button>
+            <button onClick={ClickCalc} className="shadow-md border border-black hover:bg-black transition-colors bg-yellow-600 text-white px-1">Calcular orçamento:</button>
             <div className="shadow-md sm:text-2xl md:text-2xl lg:text-4xl px-2 border border-green-950 bg-green-800 text-white">
                 R$ {Res.toFixed(2)}
             </div>
